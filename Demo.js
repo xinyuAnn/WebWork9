@@ -187,7 +187,7 @@ window.onload = function(){
 	var cover = document.getElementsByClassName('top0')[0];
 	window.onscroll = function(){
 	var st = document.documentElement.scrollTop || document.body.scrollTop;
-	if(st>200){
+	if(st>100){
 		cover.style.position = 'fixed';
 		cover.style.zIndex = 10000;
 	}else{
