@@ -1,60 +1,4 @@
-var hei = document.getElementById("hei");
-		hei.onmouseover = function(){
-			hei.style.background = "#fe0d4a";
-		}
-		hei.onmouseout = function(){
-			hei.style.background = "black";
-		}
-		var hei1 = document.getElementById("hei1");
-		hei1.onmouseover = function(){
-			hei1.style.background = "#fe0d4a";
-		}
-		hei1.onmouseout = function(){
-			hei1.style.background = "black";
-		}
-		var hei2 = document.getElementById("hei2");
-		hei2.onmouseover = function(){
-			hei2.style.background = "#fe0d4a";
-		}
-		hei2.onmouseout = function(){
-			hei2.style.background = "black";
-		}
-		var hei3 = document.getElementById("hei3");
-		hei3.onmouseover = function(){
-			hei3.style.background = "#fe0d4a";
-		}
-		hei3.onmouseout = function(){
-			hei3.style.background = "black";
-		}
-		var hei4 = document.getElementById("hei4");
-		hei4.onmouseover = function(){
-			hei4.style.background = "#fe0d4a";
-		}
-		hei4.onmouseout = function(){
-			hei4.style.background = "black";
-		}
-		var hei5 = document.getElementById("hei5");
-		hei5.onmouseover = function(){
-			hei5.style.background = "#fe0d4a";
-		}
-		hei5.onmouseout = function(){
-			hei5.style.background = "black";
-		}
-		var hei6 = document.getElementById("hei6");
-		hei6.onmouseover = function(){
-			hei6.style.background = "#fe0d4a";
-		}
-		hei6.onmouseout = function(){
-			hei6.style.background = "black";
-		}
-		var hei7 = document.getElementById("hei7");
-		hei7.onmouseover = function(){
-			hei7.style.background = "#fe0d4a";
-		}
-		hei7.onmouseout = function(){
-			hei7.style.background = "black";
-		}	
-		//您已经选择的含量
+
 		var hanliang = document.getElementById("hanliang");
 		var imgp = document.createElement("img");
 		imgp.src = "img/duigou.png";
@@ -176,7 +120,7 @@ var hei = document.getElementById("hei");
   		img1.onmousemove = function(ev){
   			var ev = ev||window.event;
   			var offset = document.documentElement.scrollTop;
-			var left = ev.clientX - tu.offsetLeft - 2*slider.offsetWidth;
+			var left = ev.clientX - tu.offsetLeft - 2.3*slider.offsetWidth;
 			var top = ev.clientY - tu.offsetTop - 2*slider.offsetHeight - slider.offsetHeight/2+offset;
 			var maxLeft = img1.offsetWidth - slider.offsetWidth;
 			var maxTop = img1.offsetHeight - slider.offsetHeight;
