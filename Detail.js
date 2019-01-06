@@ -1,36 +1,35 @@
-
-		var hanliang = document.getElementById("hanliang");
+		var draw = document.getElementById("draw");
 		var imgp = document.createElement("img");
 		imgp.src = "img/duigou.png";
-		var hanliang1 = document.getElementById("hanliang1");
+		var dra = document.getElementById("dra");
 		var imgz = document.createElement("img");
 		imgz.src = "img/duigou.png";
 		var wupin = document.getElementById("wupin");
-		hanliang.style.border = "1px solid #ff0f19";
-		hanliang.appendChild(imgp);
+		draw.style.border = "1px solid #ff0f19";
+		draw.appendChild(imgp);
 		imgp.style.display = "block";
-		hanliang1.style.border = "none";
+		dra.style.border = "none";
 		imgz.style.display = "none";
 		wupin.innerHTML = "150ml";
-		hanliang.onmouseover = function(){
-			hanliang.style.cursor = "default";
+		draw.onmouseover = function(){
+			draw.style.cursor = "default";
 		}
-		hanliang.onclick = function(){
-			hanliang.style.border = "1px solid #ff0f19";
-			hanliang.appendChild(imgp);
+		draw.onclick = function(){
+			draw.style.border = "1px solid #ff0f19";
+			draw.appendChild(imgp);
 			imgp.style.display = "block";
-			hanliang1.style.border = "none";
+			dra.style.border = "none";
 			imgz.style.display = "none";
 			wupin.innerHTML = "150ml";
 		}
-		hanliang1.onmouseover = function(){
-			hanliang1.style.cursor = "default";
+		dra.onmouseover = function(){
+			dra.style.cursor = "default";
 		}
-		hanliang1.onclick = function(){
-			hanliang1.style.border = "1px solid #ff0f19";
-			hanliang1.appendChild(imgz);
+		dra.onclick = function(){
+			dra.style.border = "1px solid #ff0f19";
+			dra.appendChild(imgz);
 			imgz.style.display = "block";
-			hanliang.style.border = "none";
+			draw.style.border = "none";
 			imgp.style.display = "none";
 			wupin.innerHTML = "200ml";
 		}
@@ -41,8 +40,8 @@
 		var img2x = document.createElement("img");
 		img2x.src = "img/pp1.jpeg";
 		img2x.id = "img2x";
-		var tu1 = document.getElementById("tu1");
-		var tu = document.getElementById("tu");
+		var pic1 = document.getElementById("pic1");
+		var pic = document.getElementById("pic");
   		var slider = document.getElementById("slider");
   		var img2 = document.getElementById("img2");
   		window.onload = function(){
@@ -56,8 +55,8 @@
 	  		imgx2.src = "img/pp1.jpeg"
 	  		imgx2.style.width = 1632+"px";
 	  		imgx2.style.height = 1632+"px";
-			tu1.style.border = "2px solid #ff9003";
-			tu2.style.border = "none";
+			pic1.style.border = "2px solid #ff9003";
+			pic2.style.border = "none";
 			img1.appendChild(img1x);
 			img1x.style.display = "block";
 			img2x.style.display = "none";
@@ -66,7 +65,7 @@
 			imgx2.style.display = "none";
 			img2.appendChild(imgx1);
 		}
-		tu1.onmousemove = function(){
+		pic1.onmousemove = function(){
 			var imgx1 = document.createElement("img");
   			imgx1.src = "img/pp0.jpeg"
   			imgx1.id = "Bimg";
@@ -77,8 +76,8 @@
 	  		imgx2.src = "img/pp1.jpeg"
 	  		imgx2.style.width = 1632+"px";
 	  		imgx2.style.height = 1632+"px";
-			tu1.style.border = "2px solid #ff9003";
-			tu2.style.border = "none";
+			pic1.style.border = "2px solid #ff9003";
+			pic2.style.border = "none";
 			img1.appendChild(img1x);
 			img1x.style.display = "block";
 			img2x.style.display = "none";
@@ -87,8 +86,8 @@
 			imgx2.style.display = "none";
 			img2.appendChild(imgx1);
 		}
-		var tu2 = document.getElementById("tu2");
-		tu2.onmousemove = function(){
+		var pic2 = document.getElementById("pic2");
+		pic2.onmousemove = function(){
 			var imgx2 = document.createElement("img");
 	  		imgx2.src = "img/pp1.jpeg"
 	  		imgx2.id = "Bimg";
@@ -99,8 +98,8 @@
   			imgx1.src = "img/pp0.jpeg"
   			imgx1.style.width = 1632+"px";
   			imgx1.style.height = 1632+"px";
-			tu2.style.border = "2px solid #ff9003";
-			tu1.style.border = "none";
+			pic2.style.border = "2px solid #ff9003";
+			pic1.style.border = "none";
 			img1.appendChild(img2x);
 			img2x.style.display = "block";
 			img1x.style.display = "none";
@@ -120,8 +119,8 @@
   		img1.onmousemove = function(ev){
   			var ev = ev||window.event;
   			var offset = document.documentElement.scrollTop;
-			var left = ev.clientX - tu.offsetLeft - 2.3*slider.offsetWidth;
-			var top = ev.clientY - tu.offsetTop - 2*slider.offsetHeight - slider.offsetHeight/2+offset;
+			var left = ev.clientX - pic.offsetLeft - 2.3*slider.offsetWidth;
+			var top = ev.clientY - pic.offsetTop - 2*slider.offsetHeight - slider.offsetHeight/2+offset;
 			var maxLeft = img1.offsetWidth - slider.offsetWidth;
 			var maxTop = img1.offsetHeight - slider.offsetHeight;
 			left = left>maxLeft?maxLeft:left<0?0:left;
