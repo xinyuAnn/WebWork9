@@ -13,7 +13,7 @@ var index = 1;
 var timer;
 var isMoving = false;
 window.onload = function(){
-	var cover = document.getElementsByClassName('top')[0];
+	var cover = document.getElementsByClassName('top0')[0];
 	window.onscroll = function(){
 		var st = document.documentElement.scrollTop || document.body.scrollTop;
 		if(st>250){
@@ -187,7 +187,7 @@ window.onload = function(){
 	var cover = document.getElementsByClassName('top0')[0];
 	window.onscroll = function(){
 	var st = document.documentElement.scrollTop || document.body.scrollTop;
-	if(st>250){
+	if(st>200){
 		cover.style.position = 'fixed';
 		cover.style.zIndex = 10000;
 	}else{
